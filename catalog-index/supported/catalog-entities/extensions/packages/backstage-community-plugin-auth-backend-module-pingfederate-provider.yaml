@@ -18,7 +18,7 @@ metadata:
 spec:
   packageName: "@backstage-community/plugin-auth-backend-module-pingfederate-provider"
   # Tag: bs_1.54.6__0.4.0
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-auth-backend-module-pingfederate-provider@sha256:6c36da3ba0c80628282b0b7c40e1338a9009708f71738570427192040f6db262"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-auth-backend-module-pingfederate-provider@sha256:90c4c62ded45fe2e9c8f0a1926ce1aa0f94c618d850ceb4cf55245191948563a"
   version: 0.4.0
   backstage:
     role: backend-plugin-module
