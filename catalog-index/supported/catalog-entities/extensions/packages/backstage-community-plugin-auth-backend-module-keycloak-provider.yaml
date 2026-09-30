@@ -18,7 +18,7 @@ metadata:
 spec:
   packageName: "@backstage-community/plugin-auth-backend-module-keycloak-provider"
   # Tag: bs_1.54.6__0.6.0
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-auth-backend-module-keycloak-provider@sha256:ce4e7661f41a5d1cb549f362a72d8b4f184d4afb5a747f6951f841df142cf50d"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-auth-backend-module-keycloak-provider@sha256:8deef88a4376eb2dbc892dca8e7f37d5abd0ef3885d20718efb0c7560cbfa42d"
   version: 0.6.0
   backstage:
     role: backend-plugin-module
@@ -42,3 +42,12 @@ spec:
                 signIn:
                   resolvers:
                     - resolver: emailMatchingUserEntityProfileEmail
+              production:
+                clientId: ${AUTH_KEYCLOAK_CLIENT_ID}
+                clientSecret: ${AUTH_KEYCLOAK_CLIENT_SECRET}
+                baseUrl: ${AUTH_KEYCLOAK_BASE_URL}
+                realm: ${AUTH_KEYCLOAK_REALM}
+                prompt: auto
+                signIn:
+                  resolvers:
+                    - resolver: preferredUsernameMatchingUserEntityName

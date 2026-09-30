@@ -1,7 +1,7 @@
 apiVersion: extensions.backstage.io/v1alpha1
 kind: Package
 metadata:
-  name: rhdh-backstage-plugin-scorecard-backend-module-jira
+  name: rhdh-bsp-scorecard-backend-mod-jira
   namespace: rhdh
   title: "Scorecard Backend Module for Jira"
   links:
@@ -18,7 +18,7 @@ metadata:
 spec:
   packageName: "@red-hat-developer-hub/backstage-plugin-scorecard-backend-module-jira"
   # Tag: bs_1.54.6__4.4.1
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend-module-jira@sha256:6523d54ce2002512bbd550ddcc8d12933d7ff901c4c20052ebd5fec9340df5c7"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend-module-jira@sha256:7e843e67b010e75ac39da080c5ec17f666a7e85fb3f270b03de28ffef05ed2a9"
   version: 4.4.1
   backstage:
     role: backend-plugin-module
